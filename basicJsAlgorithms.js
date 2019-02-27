@@ -91,19 +91,47 @@
 // console.log(arr);
 
 
-// Min, max, and average of a given array
-var arr = [1,5,10,-3]
-var max = arr[0];
-var min = arr[0];
-var sum = 0;
-for(var i=0; i<arr.length; i++) {
-  if(arr[i] < min) {
-    min = arr[i];
-  }
-  if(arr[i] > max) {
-    max = arr[i];
-  }
-  sum = sum + arr[i];
+// // Min, max, and average of a given array
+// var arr = [1,5,10,-3];
+// var max = arr[0];
+// var min = arr[0];
+// var sum = 0;
+// for(var i=0; i<arr.length; i++) {
+//   if(arr[i] < min) {
+//     min = arr[i];
+//   }
+//   if(arr[i] > max) {
+//     max = arr[i];
+//   }
+//   sum = sum + arr[i];
+// }
+// var avg = sum / arr.length;
+// console.log(min, max, avg);
+
+
+// // Shift the values in a given array left
+// var arrx = [1,5,10,-3,6];
+// for(var i=0; i<arrx.length-1; i++) {
+//   arrx[i] = arrx[i+1];
+// }
+// arrx[arrx.length-1] = 0;
+// console.log(arrx);
+
+
+// // Negative numbers to string
+// var arry = [-2,-5,16];
+// for(var i=0; i<arry.length; i++) {
+//   if(arry[i] < 0) {
+//     arry[i] = 'unicorn';
+//   }
+// }
+// console.log(arry);
+
+
+// Create a random array with 10 values with integers between 0 and 100
+var arr = [];
+for(var i=0; i<10; i++) {
+  var rand_int = Math.floor(Math.random() * 101);
+  arr.push(rand_int);
 }
-var avg = sum / arr.length;
-console.log(min, max, avg);
+console.log(arr);
