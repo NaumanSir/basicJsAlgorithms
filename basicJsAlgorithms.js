@@ -128,10 +128,28 @@
 // console.log(arry);
 
 
-// Create a random array with 10 values with integers between 0 and 100
-var arr = [];
-for(var i=0; i<10; i++) {
-  var rand_int = Math.floor(Math.random() * 101);
-  arr.push(rand_int);
+// // Create a random array with 10 values with integers between 0 and 100
+// var arr = [];
+// for(var i=0; i<10; i++) {
+//   var rand_int = Math.floor(Math.random() * 101);
+//   arr.push(rand_int);
+// }
+// console.log(arr);
+
+
+// // Swapping the first and last values of a given array
+// var swaparr = [8,4,5,7,6];
+// var temp = swaparr[0];
+// swaparr[0] = swaparr[swaparr.length-1];
+// swaparr[swaparr.length-1] = temp;
+// console.log(swaparr);
+
+
+// Reverse the values of an array
+var x = [3,2,1,0,-1,-2,-3];
+for(var i=0; i<x.length/2; i++) {
+  var temp = x[i];
+  x[i] = x[x.length - 1 - i];
+  x[x.length - 1 - i] = temp;
 }
-console.log(arr);
+console.log(x);
