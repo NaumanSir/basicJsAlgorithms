@@ -137,7 +137,7 @@
 // console.log(arr);
 
 
-// // Swapping the first and last values of a given array
+// // Swap the first and last values of a given array without creating a new array
 // var swaparr = [8,4,5,7,6];
 // var temp = swaparr[0];
 // swaparr[0] = swaparr[swaparr.length-1];
@@ -145,11 +145,33 @@
 // console.log(swaparr);
 
 
-// Reverse the values of an array
-var x = [3,2,1,0,-1,-2,-3];
-for(var i=0; i<x.length/2; i++) {
-  var temp = x[i];
-  x[i] = x[x.length - 1 - i];
-  x[x.length - 1 - i] = temp;
-}
-console.log(x);
+// // Reverse the values of an array
+// var x = [3,2,1,0,-1,-2,-3];
+// for(var i=0; i<x.length/2; i++) {
+//   var temp = x[i];
+//   x[i] = x[x.length - 1 - i];
+//   x[x.length - 1 - i] = temp;
+// }
+// console.log(x);
+
+
+// // Insert a new number, x, at the index y.
+// var arr = [5,7,9,12];
+// var x = 10;
+// var y = 2;
+
+// arr.push(0);
+// arr[arr.length - 1] = arr[arr.length - 2];
+// arr[arr.length - 2] = arr[arr.length - 3];
+// arr[y] = x;
+// console.log(arr);
+
+// /* more efficient method for above ^ */
+// arr.push(0);
+// for(var i=0; i<arr.length-1; i>y; i--) {
+//   arr[i] = arr[i-1];
+// }
+
+// arr[y] = x;
+
+// console.log(arr);
