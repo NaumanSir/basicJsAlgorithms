@@ -175,3 +175,19 @@
 // arr[y] = x;
 
 // console.log(arr);
+
+
+// // Remove the negative values of a given array wherein the original positive values not only remain, but are still set in their original order
+// var arr=[-3,-7, 3, 9, -11, 7];
+// var numNegatives = 0;
+// for(var i=0; i<arr.length; i++) {
+//   if(arr[i] < 0) {
+//     numNegatives++;
+//   } else {
+//     arr[i - numNegatives] = arr[i];
+//   }
+// }
+// while(numNegatives--) {
+//   arr.pop();
+// }
+// console.log(arr);
